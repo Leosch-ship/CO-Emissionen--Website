@@ -1,0 +1,54 @@
+[
+  
+    {
+      "land": "Saudi-Arabien",
+      "unternehmen": "Saudi Aramco",
+      "emissionen": 1839000000
+    },
+    {
+      "land": "Indien",
+      "unternehmen": "Coal India",
+      "emissionen": 1548000000
+    },
+    {
+      "land": "China",
+      "unternehmen": "CHN Energy",
+      "emissionen": 1533000000
+    },
+    {
+      "land": "Iran",
+      "unternehmen": "National Iranian Oil",
+      "emissionen": 1262000000
+    },
+    {
+      "land": "China",
+      "unternehmen": "Jinneng Group",
+      "emissionen": 1228000000
+    },
+    {
+      "land": "USA",
+      "unternehmen": "ExxonMobil",
+      "emissionen": 562000000
+    },
+    {
+      "land": "USA",
+      "unternehmen": "Chevron",
+      "emissionen": 487000000
+    },
+    {
+      "land": "Vereinigtes Königreich",
+      "unternehmen": "Shell",
+      "emissionen": 418000000
+    },
+    {
+      "land": "Frankreich",
+      "unternehmen": "TotalEnergies",
+      "emissionen": 359000000
+    },
+    {
+      "land": "Vereinigtes Königreich",
+      "unternehmen": "BP",
+      "emissionen": 347000000
+    }
+  ]
+  

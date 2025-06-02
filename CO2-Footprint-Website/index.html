@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO₂-Footprint Übersicht</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+
+  <header class="relative bg-green-600 text-white overflow-hidden">
+    <div class="flex items-center justify-between px-6 py-4 relative z-10">
+      <div class="flex items-center gap-4">
+        <img src="img/logo.png" alt="Logo" class="h-20 w-auto">
+        <h1 class="text-xl sm:text-2xl font-bold tracking-wide">CO₂ Emissionen</h1>
+      </div>
+    </div>
+    <img
+      id="forest-deco"
+      src="img/forest.png"
+      alt="Wald Silhouette"
+      class="absolute bottom-0 opacity-90 z-0 pointer-events-none select-none transition-transform duration-500 h-10 sm:h-16 md:h-20 lg:h-24"
+      style="left: auto; right: 0; transform: scaleX(1); direction: inherit;"
+    />
+  </header>
+
+  <nav class="bg-green-100 p-4">
+    <div id="nav-grid" class="grid" style="direction: inherit;">
+      <ul class="grid grid-flow-col auto-cols-max gap-4 justify-self-start [direction:inherit]">
+        <li><a href="#" class="hover:underline">Startseite</a></li>
+        <li><a href="#" class="hover:underline">Emissionen</a></li>
+        <li><a href="#" class="hover:underline">Über uns</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="p-4 flex-grow">
+    <h2 class="text-xl mb-4">Datenübersicht</h2>
+    <label for="filter" class="block mb-2 font-semibold">Suche:</label>
+    <input
+      type="text"
+      id="filter"
+      placeholder="Land oder Unternehmen"
+      class="border p-2 mb-4 w-full"
+    >
+  </main>
+
+  <footer class="bg-gray-300 p-4 text-sm text-gray-700">
+    &copy; 2025 Non-Profit Organisation. Alle Rechte vorbehalten.
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const isRTL = document.documentElement.dir === "rtl";
+      const forest = document.getElementById("forest-deco");
+
+      forest.style.left = isRTL ? "0" : "auto";
+      forest.style.right = isRTL ? "auto" : "0";
+
+      forest.style.transform = isRTL ? "scaleX(-1)" : "scaleX(1)";
+    });
+  </script>
+</body>
+</html>
